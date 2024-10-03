@@ -36,7 +36,7 @@ public class Square {
 		//creating method for calculating area
 		public void calculateArea() {
 			float area=side*side;  //formula for area
-			System.out.println("Perimeter of the square :"+area);
+			System.out.println("Area of the square :"+area);
 	
 	}
 
