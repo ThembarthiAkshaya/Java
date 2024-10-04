@@ -14,24 +14,28 @@ public class DivisionExceptionExample {
 		int num1,num2;
 
 		//Asking the user to enter the two numbers from keyboard
-		System.out.println("Enter first number: ");
+		System.out.print("Enter first number: ");
 		num1=sc.nextInt();
-		System.out.println("Enter second number: ");
+		System.out.print("Enter second number: ");
 		num2=sc.nextInt();
 
-		//closing the scanner
-		sc.close();
-
+		
 		try 
 		{
 			System.out.println("On dividing "+num1+" by "+num2+" : ");
 			System.out.println("Quotient : "+(num1/num2));
-			System.out.println("Quotient : "+(num1%num2));
+			System.out.println("Remainder : "+(num1%num2));
+			System.out.println("----------------------------------------");
 		}
 		
 		//sending object e to the class Exception
-		catch(Exception e) {
+		catch(ArithmeticException e) {
 			System.out.println("Unable to divide a number by 0"+e);
+		}
+		finally{
+			System.out.println("--------finally block---------------");
+			sc.close();
+			System.out.println("------------------------------------");
 		}
 		System.out.println("------------task completed------------");
 	}
