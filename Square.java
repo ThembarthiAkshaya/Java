@@ -6,39 +6,39 @@ package twoDFigure;
 import java.util.Scanner;
 
 public class Square {
-	//member variable declaration
+	// member variable declaration
 	float side;
 
-	//non-parameterized constructor
+	// non-parameterized constructor
 	public Square() {
-		//creating object of scanner class
-		Scanner sc=new Scanner(System.in);
+		// creating object of scanner class
+		Scanner sc = new Scanner(System.in);
 
-		//asking the user to input the side through the keyboard
+		// asking the user to input the side through the keyboard
 		System.out.println("Enter the side of the square :");
-		side=sc.nextFloat();
-		
-		//closing the scanner
+		side = sc.nextFloat();
+
+		// closing the scanner
 		sc.close();
 	}
 
-	//creating method to display the data
+	// Method to display the data
 	public void displayData() {
 		System.out.println("----------SQUARE--------");
-		System.out.println("Side :"+side);
+		System.out.println("Side :" + side);
 	}
 
-	//creating method for calculating perimeter
+	// Method for calculating perimeter
 	public void calculatePerimeter() {
-		float perimeter=4*side;  //formula for perimeter
-		System.out.println("Perimeter of the square :"+perimeter);
-	}
-		//creating method for calculating area
-		public void calculateArea() {
-			float area=side*side;  //formula for area
-			System.out.println("Area of the square :"+area);
-	
+		float perimeter = 4 * side; // formula for perimeter
+		System.out.println("Perimeter of the square :" + perimeter);
 	}
 
+	// Method for calculating area
+	public void calculateArea() {
+		float area = side * side; // formula for area
+		System.out.println("Area of the square :" + area);
+
+	}
 
 }
