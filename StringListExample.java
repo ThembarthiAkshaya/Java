@@ -1,5 +1,7 @@
+//program on creating a list of strings and performing different methods on it
 package collections_topic;
 
+//importing util package
 import java.util.*;
 
 public class StringListExample {
@@ -14,6 +16,8 @@ public class StringListExample {
 		list.add("grapes");
 		list.add("Strawberry");
 		list.add("banana");
+		
+		System.out.println("Printing list :"+list);
 
 		/*------creating iterator-------*/
 		Iterator iterator = list.iterator();
