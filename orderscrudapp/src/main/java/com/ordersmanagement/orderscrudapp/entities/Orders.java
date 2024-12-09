@@ -1,7 +1,15 @@
+/*---The Orders class you provided is an entity class.It is used to store the details 
+of an order in your application, typically corresponding to a table in a relational database---*/
+
+/*---this class (the entity class) would be used in conjunction with other layers,
+  like the DAO (Data Access Object), to interact with the database---*/
+
 //fields should be mentioned as member variables
+
 package com.ordersmanagement.orderscrudapp.entities;
 
-public class Orders {
+public class Orders 
+{
 	private String productid;
 	private String productName;
 	private int price;
@@ -9,10 +17,10 @@ public class Orders {
 	private String address;
 
 	//parameterized constructor
-	public Orders(String productid, String orderName, int price, int quantity, String address) {
+	public Orders(String productid, String productName, int price, int quantity, String address) {
 		super();
 		this.productid = productid;
-		this.productName = orderName;
+		this.productName = productName;
 		this.price = price;
 		this.quantity = quantity;
 		this.address = address;
@@ -33,7 +41,7 @@ public class Orders {
 	public String getOrderName() {
 		return productName;
 	}
-	public void setOrderName(String orderName) {
+	public void setOrderName(String productName) {
 		this.productName = productName;
 	}
 	public int getPrice() {
