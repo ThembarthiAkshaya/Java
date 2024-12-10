@@ -22,6 +22,8 @@ public class RotatingArray {
 			numbers[i]=sc.nextInt();
 		}
 		
+		System.out.println("Rotated array:");
+		
 		//displaying array
 		for(int i=0;i<numbers.length;i++) {
 			System.out.print(numbers[i]+"");
@@ -42,9 +44,11 @@ public class RotatingArray {
             temp[i] = numbers[(i + positions) % size];  // Calculate new index
         }
 		
+		System.out.println("Rotated array:");
+		
 		//printing rotated array
 		for(int i=0;i<temp.length;i++) {
-			System.out.print(temp[i]);
+			System.out.print(temp[i]+"\n");
 		}
 	}
 }
