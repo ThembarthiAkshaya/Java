@@ -22,7 +22,7 @@ public class RotatingArray {
 			numbers[i]=sc.nextInt();
 		}
 		
-		System.out.println("Rotated array:");
+		System.out.println("Original array:");
 		
 		//displaying array
 		for(int i=0;i<numbers.length;i++) {
