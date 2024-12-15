@@ -13,7 +13,7 @@ public static void main(String args[]) {
 		Statement stmt=con.createStatement();
 		
 		//to execute query for table creation
-		stmt.execute("create table student(stdid varchar(30) primary key,stdname varchar(400) not null)");
+		stmt.execute("create table student(stdid varchar(30) primary key,stdName varchar(30) not null,standard varchar(30) not null,roll int not null,age int not null,address varchar(200) not null)");
 		
 		System.out.println("Table created");
 		
